@@ -1,0 +1,22 @@
+.hidden{
+    display: none;
+}
+#home-logo img{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 200px;
+    height: 55px;
+    cursor: pointer;
+}
+#profile-square{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 1625px;
+    top: 35px;
+    background: #0774DB;
+    border-radius: 18px;
+    border-width: 0;
+    cursor: pointer;
+}
