@@ -1,3 +1,6 @@
+body{
+    overflow: hidden;
+}
 .hidden{
     display: none;
 }
@@ -19,4 +22,48 @@
     border-radius: 18px;
     border-width: 0;
     cursor: pointer;
+}
+.square1{
+    display: block;
+    position: absolute;
+    left:1400px;
+    top: 250px;
+    width: 678.39px;
+    height: 1084.92px;
+    transform: rotate(214deg);
+    background: linear-gradient( to right, white, #2B95E9 );
+    z-index: -1;
+}
+.square2{
+    display: block;
+    position: absolute;
+    left:200px;
+    top: 700px;
+    width: 400.77px;
+    height: 841.32px;
+    transform: rotate(60deg);
+    background: linear-gradient( to left, white, #76C634 );
+    z-index: -1;
+}
+.square3{
+    display: block;
+    position: absolute;
+    left:-200px;
+    top: 270px;
+    width: 300px;
+    height: 400px;
+    transform: rotate(30deg);
+    background: linear-gradient( to right top, white, #57A02C );
+    z-index: -1;
+}
+.square4{
+    display: block;
+    position: absolute;
+    left:900px;
+    top: -400px;
+    width: 320px;
+    height: 660px;
+    transform: rotate(240deg);
+    background: linear-gradient( to top left, white, #0A72DA );
+    z-index: -1;
 }
