@@ -6,13 +6,6 @@ function gohome(){
 }
 
 function goprofile(event){
-    let login=1;
-    if(login===1){
-        location.href="login.html";
-    }
-    else{
-        profilebtn.classList.add("hidden");
-    }
 }
 
 homebtn.addEventListener("click",gohome);
