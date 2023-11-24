@@ -82,8 +82,8 @@ body{
     position: absolute;
     left:1400px;
     top: 250px;
-    width: 678.39px;
-    height: 1084.92px;
+    width: 678px;
+    height: 1085px;
     transform: rotate(214deg);
     background: linear-gradient( to right, white, #2B95E9 );
     z-index: -1;

@@ -11,8 +11,11 @@ img{
 form{
     vertical-align: middle;
 }
-#id,#password{
+#email,#password{
     width:400px;
     height:40px;
     border-radius: 15px;
+}
+.in:first-child{
+    margin-bottom: 50px;
 }
