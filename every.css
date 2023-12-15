@@ -4,7 +4,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 body{
     overflow: hidden;
 }
@@ -38,7 +37,7 @@ body{
     left: 200px;
     top:150px;
     border: 1px solid none;
-    border-radius: 20px;
+    border-radius: 34px;
     box-shadow: 0px 4px 18px 1px rgba(0, 0, 0, 0.393);
     overflow-y: overlay;
     display: flex ;
@@ -46,7 +45,6 @@ body{
 }
 .wanted::-webkit-scrollbar {
     width: 25px;
-
 }
 .wanted::-webkit-scrollbar-thumb {
     background-color: hsla(0, 0%, 42%, 0.49);
@@ -69,8 +67,65 @@ body{
     top:-8px;
     left: 5px;
 }
-.wanted title{
-    display: block;
+.wanted-header button{
+    position: absolute;
+    border:1px solid black;
+    border-radius: 5px;
+    margin-left: 80%;
+    margin-top: -35px;
+    width: 90px;
+    height: 30px;
+}
+.find{
+    background-color: white;
+    width: 600px;
+    height: 221px;
+    flex-shrink: 0;
+    position: absolute;
+    left: 860px;
+    top:150px;
+    border: 1px solid none;
+    border-radius: 40px;
+    box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.25);
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+.quest{
+    background-color: white;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 860px;
+    top:450px;
+    border: 1px solid none;
+    border-radius: 40px;
+    box-shadow: 0px 4px 18px 1px rgba(0, 0, 0, 0.393);
+    display: flex ;
+}
+.quest img{
+    margin:20px 0px 0px 20px;
+    width: 30px;
+    height: 30px;
+}
+.quest p{
+    display: inline;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'GmarketSansMedium';
+    top:-8px;
+    left: 5px;
+}
+.find p{
+    color: #000;
+    font-family: Gmarket Sans TTF;
+    font-size: 59.551px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 .test{
     background-color: red;
@@ -81,7 +136,7 @@ body{
     display: block;
     position: absolute;
     left:1400px;
-    top: 250px;
+    top: 450px;
     width: 678px;
     height: 1085px;
     transform: rotate(214deg);
@@ -113,7 +168,7 @@ body{
 .square4{
     display: block;
     position: absolute;
-    left:900px;
+    left:830px;
     top: -400px;
     width: 320px;
     height: 660px;
