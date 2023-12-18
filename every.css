@@ -1,15 +1,20 @@
+@import url("https://font.elice.io/css?family=Elice+DX+Neolli");
+
 @font-face {
     font-family: 'GmarketSansMedium';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 body{
     overflow: hidden;
 }
+
 .hidden{
     display: none;
 }
+
 #home-logo img{
     position: absolute;
     left: 30px;
@@ -18,6 +23,7 @@ body{
     height: 68px;
     cursor: pointer;
 }
+
 #profile-square{
     position: absolute;
     width: 55px;
@@ -29,6 +35,7 @@ body{
     border-width: 0;
     cursor: pointer;
 }
+
 .wanted{
     background-color: white;
     width: 600px;
@@ -39,13 +46,15 @@ body{
     border: 1px solid none;
     border-radius: 34px;
     box-shadow: 0px 4px 18px 1px rgba(0, 0, 0, 0.393);
-    overflow-y: overlay;
+    overflow-y: scroll;
     display: flex ;
     justify-content: space-between;
 }
+
 .wanted::-webkit-scrollbar {
     width: 25px;
 }
+
 .wanted::-webkit-scrollbar-thumb {
     background-color: hsla(0, 0%, 42%, 0.49);
     border-radius: 100px;
@@ -53,11 +62,13 @@ body{
     border: 10px solid transparent;
     height: 200px;
 }
+
 .wanted img{
     margin:20px 0px 0px 20px;
     width: 30px;
     height: 30px;
 }
+
 .wanted p{
     display: inline;
     position: relative;
@@ -67,9 +78,11 @@ body{
     top:-8px;
     left: 5px;
 }
+
 .wanted-header{
     display: block;
 }
+
 .wanted-header button{
     position: absolute;
     border:1px solid black;
@@ -79,7 +92,8 @@ body{
     width: 90px;
     height: 30px;
 }
-.find{
+
+#find{
     background-color: white;
     width: 600px;
     height: 221px;
@@ -93,7 +107,10 @@ body{
     display: flex ;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
+
+
 .quest{
     background-color: white;
     width: 600px;
@@ -104,13 +121,16 @@ body{
     border: 1px solid none;
     border-radius: 40px;
     box-shadow: 0px 4px 18px 1px rgba(0, 0, 0, 0.393);
+    overflow-y: scroll;
     display: flex ;
 }
+
 .quest img{
     margin:20px 0px 0px 20px;
     width: 30px;
     height: 30px;
 }
+
 .quest p{
     display: inline;
     position: relative;
@@ -122,7 +142,19 @@ body{
     top:-8px;
     left: 5px;
 }
-.find p{
+
+.quest::-webkit-scrollbar {
+    width: 25px;
+}
+
+.quest::-webkit-scrollbar-thumb {
+    background-color: hsla(0, 0%, 42%, 0.49);
+    border-radius: 100px;
+    background-clip: padding-box;
+    border: 10px solid transparent;
+    height: 200px;
+}
+#find p{
     color: #000;
     font-family: Gmarket Sans TTF;
     font-size: 59.551px;
@@ -130,11 +162,7 @@ body{
     font-weight: 500;
     line-height: normal;
 }
-.test{
-    background-color: red;
-    width: 200px;
-    height: 1000px;
-}
+
 .square1{
     display: block;
     position: absolute;
@@ -146,6 +174,7 @@ body{
     background: linear-gradient( to right, white, #2B95E9 );
     z-index: -1;
 }
+
 .square2{
     display: block;
     position: absolute;
@@ -157,6 +186,7 @@ body{
     background: linear-gradient( to left, white, #76C634 );
     z-index: -1;
 }
+
 .square3{
     display: block;
     position: absolute;
@@ -168,6 +198,7 @@ body{
     background: linear-gradient( to right top, white, #57A02C );
     z-index: -1;
 }
+
 .square4{
     display: block;
     position: absolute;
@@ -179,14 +210,106 @@ body{
     background: linear-gradient( to top left, white, #0A72DA );
     z-index: -1;
 }
-.quest-page{
+
+.modal-page{
     margin: -20px;
     width: 120%;
     height: 120%;
     position: absolute;
-    background-color: rgb(0, 0, 0);
-    opacity: 0.36;
+    background-color: rgb(0, 0, 0, 0.5);
 }
+
 .quested{
-    wi
+    left: 23%;
+    top: 12%;
+    width: 720px;
+    height: 720px;
+    background-color: white;
+    position: absolute;
+    border-radius: 40px;
+    z-index: 2;
+}
+
+.quested-title p{
+    margin-left: 24px;
+    margin-top: 16px;
+    font-family:  Elice DX Neolli;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.quested-title button{
+    position: absolute;
+    margin-left: 540px;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: #0774DB;
+    border: 0;
+    cursor: pointer;
+}
+.quested-body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#addImg{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F4F4;
+    border-radius: 40px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 3px 20px 1px rgba(0, 0, 0, 0.25);
+}
+.quested-body input{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: Elice DX Neolli;
+    width: 350px;
+    height: 40px;
+    outline: 0;
+    margin-top: 20px;
+    border-left-width:0; 
+    border-right-width:0; 
+    border-top-width:0; 
+    border-bottom-width:1px;
+}
+.quested-body input:focus{
+    border-bottom-width: 2px;
+}
+#quest-detail{
+    width: 600px;
+    height: 350px;
+    margin-left: 8%;
+    margin-top: 5%;
+    border-radius: 40px;
+    background: #F4F4F4;
+    box-shadow: 0px 3px 20px 1px rgba(0, 0, 0, 0.25);
+}
+#detail{
+    font-family: Elice DX Neolli;
+    resize: none;
+    border: none;
+    outline: #000;
+    background: #F4F4F4;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 560px;
+    height: 300px;
+}
+#detail::-webkit-scrollbar {
+    width: 25px;
+}
+
+#detail::-webkit-scrollbar-thumb {
+    background-color: hsla(0, 0%, 42%, 0.49);
+    border-radius: 100px;
+    background-clip: padding-box;
+    border: 10px solid transparent;
+    height: 200px;
 }

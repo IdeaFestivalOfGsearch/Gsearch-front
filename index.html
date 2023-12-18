@@ -20,19 +20,16 @@
             <div class="wanted-title">
                 <img src="./img/bell.svg" alt="이미지">
                 <p>
-                    찾은 분실물
+                    찾고있는 분실물
                 </p>
             </div>
-            <button type="button" >
-                발견했어요
-            </button>
         </div>
         <div class="attr">
 
         </div>
     </div>
 
-    <div class="find">
+    <div id="find">
         <img src="./img/plus.svg" alt="">
         <p>
             분실물 신청
@@ -40,15 +37,36 @@
     </div>
 
     <div class="quest">
-        <img src="./img/find.png" alt="">
-        <p>
-            찾고있는 분실물
-        </p>
+        <div class="quest-title">
+            <img src="./img/find.png" alt="">
+            <p>
+                찾은 분실물
+            </p>
+        </div>
+        <div class="quest-body">
+
+        </div>
     </div>
     
-    <div class="quest-page">
-        <div class="quested">
-
+    <div id="pack" class="hidden">
+        <div class="modal-page">
+            <div class="quested">
+                <div class="quested-title">
+                    <p>
+                        분실했어요
+                        <button type="button" id="exitbtn">X</button>
+                    </p>
+                </div>
+                <div class="quested-body">
+                    <input type="text" placeholder="제목을 입력하세요">
+                    <div id="addImg">
+                        <img src="./img/addImg.svg" alt="">
+                    </div>
+                </div>
+                <div id="quest-detail" >
+                    <textarea id="detail" placeholder="설명을 입력하세요(잃어버린 위치, 시간 등)"></textarea>
+                </div>
+            </div>
         </div>
     </div>
 
