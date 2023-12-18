@@ -67,6 +67,9 @@ body{
     top:-8px;
     left: 5px;
 }
+.wanted-header{
+    display: block;
+}
 .wanted-header button{
     position: absolute;
     border:1px solid black;
@@ -175,4 +178,15 @@ body{
     transform: rotate(240deg);
     background: linear-gradient( to top left, white, #0A72DA );
     z-index: -1;
+}
+.quest-page{
+    margin: -20px;
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.36;
+}
+.quested{
+    wi
 }

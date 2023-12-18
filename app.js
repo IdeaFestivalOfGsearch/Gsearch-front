@@ -1,12 +1,15 @@
 const homebtn = document.getElementById("home-logo");
 const profilebtn = document.getElementById("profile-square"); 
+const findbtn = document.getElementsByClassName("find");
+const quest = document.getElementsByClassName("quest-page")
 
-function gohome(){
-    location.href="index.html";
+const gomain = () => {
+    window.location.href="index.html";
 }
 
-function goprofile(event){
+const goprofile = () => {
+    location.href="login.html";
 }
 
-homebtn.addEventListener("click",gohome);
+homebtn.addEventListener("click",gomain);
 profilebtn.addEventListener("click",goprofile);
