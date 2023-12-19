@@ -9,13 +9,20 @@
 <body>
     <div id="login">
         <img src="./img/GSearch-logo.jpg" alt="로고" class="logo">
-        <form action="" class="in">
-            <input type="email" id="email" placeholder="이메일을 입력하세요"><br>
-            <input type="password" id="password" placeholder="비밀번호를 입력하세요."><br>
-            <input type="checkbox" name="자동 로그인" id="autoLogin">자동 로그인<br>
-            <button type="button" onclick="location.href='index.html'">로그인</button>
-        </form>
+            <div id="email">
+                <img src="./img/user.svg" id="user">
+                <input type="email" id="emailbtn" placeholder="이메일을 입력하세요">
+            </div>
+            <div id="password">
+                <div id="outlock">
+                    <img src="./img/lock.svg" id="lock">
+                </div>
+                <div>
+                    <input type="password" id="passwordbtn" placeholder="비밀번호를 입력하세요.">
+                </div>
+            </div>
+            <button type="button" onclick="location.href='index.html'" id="loginbtn">로그인</button>
     </div>
-    <script src="app.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
