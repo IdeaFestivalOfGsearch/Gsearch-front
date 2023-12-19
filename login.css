@@ -1,18 +1,87 @@
+@import url("https://font.elice.io/css?family=Elice+DX+Neolli");
+
 body{
+    display: flex;
+    justify-content: center;
     text-align: center;
     background-color: black;
     color:white;
 }
 .logo{
-    width: 200px;
-    height: 200px;
-    padding-top: 100px;
+    width: 250px;
+    height: 250px;
+    margin-top: 100px;
 }
-form{
-    vertical-align: middle;
+#user{
+    margin-left: -40px;
+    position: absolute;
+    left: 650px;
+    top: 365px;
+    margin-top: 5px;
+    height: 60px;
 }
-#email,#password{
-    width:400px;
-    height:40px;
-    border-radius: 15px;
+#lock{
+    margin-left: -40px;
+    margin-top: 10px;
+    height: 45px;
+}
+#outlock{
+    display: inline;
+    position: absolute;
+    left: 625px;
+    top: 460px;
+    width: 70px;
+    height: 50px;
+}
+#email{
+    width:500px;
+    height:80px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: none;
+    background-color: #fff;
+}
+#password{
+    width:500px;
+    height:80px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: none;
+    background-color: #fff;
+}
+#emailbtn{
+    padding: 0;
+    position: absolute;
+    left: 690px;
+    top: 378px;
+    width:375px;
+    height: 50px;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    text-align: center;
+}
+#passwordbtn{
+    position: absolute;
+    left: 690px;
+    top: 495px;
+    margin-top: -20px;
+    width:375px;
+    height: 50px;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    text-align: center;
+}
+#loginbtn{
+    font-size: 30px;
+    font-weight: 300;
+    font-family: Elice DX Neolli;
+    margin-top: 50px;
+    width:500px;
+    height:70px;
+    border-radius: 30px;
+    background-color:  #97CCFF;;
+    border: none;
 }
