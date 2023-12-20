@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="every.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0" />
+        <link rel="stylesheet" href="every.css">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Gsearch</title>
 </head>
 <body>
@@ -11,40 +12,107 @@
         <div id="home-logo">
             <img src="./img/logo.png" alt="Gsearch">
         </div>
-        <button type="button" id="profile-square">
-        <script src="app.js"></script>
+
+        <div class="user">
+            <div class="nickname">
+                Nicknameadsfasdfasdfasfda
+            </div>
+            <button type="button" id="profile-square">
+            </div>
     </div>
 
     <div class="wanted">
         <div class="wanted-header">
-            <div class="wanted-title">
-                <img src="./img/bell.svg" alt="이미지">
+                <div class="wanted-title">
+                <img src="./img/bell.svg" id="alarm">
                 <p>
                     찾고있는 분실물
                 </p>
             </div>
         </div>
-        <div class="attr">
-
-        </div>
+        <div class="wanted-body">
+            <div class="container">
+                <div class="red"></div>
+                <div class="red-title">제목</div>
+            </div>
+            <div class="container">
+                <div class="red"></div>
+                <div class="red-title">제목</div>
+            </div>
+            <div class="container">
+                <div class="red"></div>
+                <div class="red-title">제목</div>
+            </div><div class="container">
+                <div class="red"></div>
+                <div class="red-title">제목</div>
+            </div><div class="container">
+                <div class="red"></div>
+                <div class="red-title">제목</div>
+            </div>
+    </div>
+    <img src="./img/icon.svg" id="map">
     </div>
 
     <div id="find">
-        <img src="./img/plus.svg" alt="">
+        <img src="./img/plus.svg">
         <p>
             분실물 신청
         </p>
     </div>
 
     <div class="quest">
-        <div class="quest-title">
-            <img src="./img/find.png" alt="">
-            <p>
-                찾은 분실물
-            </p>
+        <div class="quest-header">
+            <div class="quest-title">
+                <img src="./img/find.png">
+                <div>
+                    찾은 분실물
+                </div>
+            </div>
+            <button id="findbtn">발견했어요</button>
         </div>
         <div class="quest-body">
-
+            <div class="sentence">
+                <div class="sentence-title">
+                    제목
+                </div>
+                <div class="sentence-detail">
+                    내용내용내용내용내용내용내용내용내용내용내용내용내용내용
+                </div>
+            </div>
+            <div class="sentence">
+                <div class="sentence-title">
+                    제목
+                </div>
+                <div class="sentence-detail">
+                    내용내용내용내용내용내용내용내용내용내용내용내용내용내용
+                </div>
+            </div>
+            <div class="sentence">
+                <div class="sentence-title">
+                    제목
+                </div>
+                <div class="sentence-detail">
+                    내용내용내용내용내용내용내용내용내용내용내용내용내용내용
+                </div>
+            </div>
+            <div class="sentence">
+                <div class="sentence-title">
+                    제목
+                </div>
+                <div class="sentence-detail">
+                    내용내용내용내용내용내용내용내용내용내용내용내용내용내용
+                </div>
+            </div>
+            <div class="sentence">
+                <div class="sentence-title">
+                    제목
+                </div>
+                <div class="sentence-detail">
+                    내용내용내용내용내용내용내용내용내용내용내용내용내용내용
+                </div>
+            </div>
+           
+            </div>
         </div>
     </div>
     
@@ -54,20 +122,86 @@
                 <div class="quested-title">
                     <p>
                         분실했어요
-                        <button type="button" id="exitbtn">X</button>
                     </p>
+                    <button type="button" class="exitbtn">X</button>
                 </div>
                 <div class="quested-body">
                     <input type="text" placeholder="제목을 입력하세요">
-                    <input type="file" id="fileupload">
-                    <div id="addImg">
-                        <img src="./img/addImg.svg">
-                    </div>
+                    <form>
+                        <input type="file" id="fileupload" accept="image/*">
+                        <div id="addImg">
+                            <img src="./img/addImg.svg">
+                        </div>
+                        <div class="thumnail">
+
+                        </div>
+                    </form>
                 </div>
                 <div id="quest-detail" >
                     <textarea id="detail" placeholder="설명을 입력하세요(잃어버린 위치, 시간 등)"></textarea>
+                    <button id="quest-submit">
+                        완료
+                    </button>
                 </div>
             </div>
+
+        </div>
+    </div>
+
+    <div id="findpage" class="hidden">
+        <div class="modal-page">
+            <div class="find-page">
+                <div class="quested-title">
+                    <p>
+                        발견했어요
+                    </p>
+                    <button type="button" class="findexit">X</button>
+                </div>
+                <div class="find-body">
+                    <input type="text" placeholder="제목을 입력하세요">
+                </div>
+                <div id="find-detail" >
+                    <textarea id="find-area" placeholder="설명을 입력하세요(찾은 위치, 시간 등)">
+                    </textarea>
+                    <button id="find-submit">
+                        완료
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="profile" class="hidden">
+        <div class="modal-page">
+            <div class="profile-page">
+                <div class="quested-title">
+                    <p>
+                        프로필
+                    </p>
+                    <button type="button" class="profile-exit">X</button>
+                </div>
+                <div name="image">
+                    <img src="./img/profile-left.svg" class="green-corner">
+                    <img src="./img/profile-right.svg" class="blue-corner">
+                    <div class="profile-icon-container">
+                        <img src="./img/profile.svg" alt="프로필" class="profile-icon">
+                    </div>
+                    <img src="./img/market.svg" alt="칭호상점가기" class="market">
+                </div>
+                <div class="find-body">
+                    <div class="nickname">
+
+                    </div>
+                    <div class="point">
+
+                    </div>
+                    <div class="title">
+
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -78,6 +212,5 @@
         <div class="square4"></div>
     </div>
     <script src="app.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 </html>
