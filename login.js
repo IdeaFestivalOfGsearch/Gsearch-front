@@ -7,7 +7,7 @@ const loginbtn = document.getElementById('loginbtn');
 function submitLogin(event){
     event.preventDefault();
     if(emailInput.value==="test@test.com"&&passwordInput.value==="test1234"){
-        location.href="index.html";
+        location.href="main.html";
     }else if(emailInput.value===""||emailInput.value===""){
         alert("아이디와 비번을 입력해주세요.");
         location.href = "login.html";
