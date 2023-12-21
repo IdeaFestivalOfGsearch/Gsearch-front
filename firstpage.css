@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color:white;
+}
+.icon{
+    width:400px;
+    margin-top: 200px;
+}
+
+.size{
+    font-size: 25px;
+}
+
+.font-size{
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color : #0774DB;
+}
+a:visited {
+  color : #0774DB;
+}
+a:hover {
+  color : rgb(0, 255, 17);
+}
+a:active {
+  color : #0774DB;
+}
+
+.color{
+  color: #0774DB;
+}
+
+.center{
+  text-align: center;
+}

@@ -7,15 +7,20 @@
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Gsearch</title>
 </head>
-<body>
+<body style="
+width: 100vw;
+background-image: url(./img/background.png);
+background-repeat: no-repeat;
+background-size: cover;
+">
     <div class="top">
         <div id="home-logo">
             <img src="./img/logo.png" alt="Gsearch">
         </div>
 
         <div class="user">
-            <div class="nickname">
-                Nicknameadsfasdfasdfasfda
+            <div class="nickname-top">
+                
             </div>
             <button type="button" id="profile-square">
             </div>
@@ -31,24 +36,7 @@
             </div>
         </div>
         <div class="wanted-body">
-            <div class="container">
-                <div class="red"></div>
-                <div class="red-title">제목</div>
-            </div>
-            <div class="container">
-                <div class="red"></div>
-                <div class="red-title">제목</div>
-            </div>
-            <div class="container">
-                <div class="red"></div>
-                <div class="red-title">제목</div>
-            </div><div class="container">
-                <div class="red"></div>
-                <div class="red-title">제목</div>
-            </div><div class="container">
-                <div class="red"></div>
-                <div class="red-title">제목</div>
-            </div>
+
     </div>
     <img src="./img/icon.svg" id="map">
     </div>
@@ -71,45 +59,7 @@
             <button id="findbtn">발견했어요</button>
         </div>
         <div class="quest-body">
-            <div class="sentence">
-                <div class="sentence-title">
-                    제목
-                </div>
-                <div class="sentence-detail">
-                    내용내용내용내용내용내용내용내용내용내용내용내용내용내용
-                </div>
-            </div>
-            <div class="sentence">
-                <div class="sentence-title">
-                    제목
-                </div>
-                <div class="sentence-detail">
-                    내용내용내용내용내용내용내용내용내용내용내용내용내용내용
-                </div>
-            </div>
-            <div class="sentence">
-                <div class="sentence-title">
-                    제목
-                </div>
-                <div class="sentence-detail">
-                    내용내용내용내용내용내용내용내용내용내용내용내용내용내용
-                </div>
-            </div>
-            <div class="sentence">
-                <div class="sentence-title">
-                    제목
-                </div>
-                <div class="sentence-detail">
-                    내용내용내용내용내용내용내용내용내용내용내용내용내용내용
-                </div>
-            </div>
-            <div class="sentence">
-                <div class="sentence-title">
-                    제목
-                </div>
-                <div class="sentence-detail">
-                    내용내용내용내용내용내용내용내용내용내용내용내용내용내용
-                </div>
+            
             </div>
            
             </div>
@@ -131,9 +81,6 @@
                         <input type="file" id="fileupload" accept="image/*">
                         <div id="addImg">
                             <img src="./img/addImg.svg">
-                        </div>
-                        <div class="thumnail">
-
                         </div>
                     </form>
                 </div>
@@ -161,8 +108,7 @@
                     <input type="text" placeholder="제목을 입력하세요">
                 </div>
                 <div id="find-detail" >
-                    <textarea id="find-area" placeholder="설명을 입력하세요(찾은 위치, 시간 등)">
-                    </textarea>
+                    <textarea id="find-area" placeholder="설명을 입력하세요(찾은 위치, 시간 등)"></textarea>
                     <button id="find-submit">
                         완료
                     </button>
@@ -184,18 +130,16 @@
                 <div name="image">
                     <img src="./img/profile-left.svg" class="green-corner">
                     <img src="./img/profile-right.svg" class="blue-corner">
-                    <div class="profile-icon-container">
-                        <img src="./img/profile.svg" alt="프로필" class="profile-icon">
-                    </div>
-                    <img src="./img/market.svg" alt="칭호상점가기" class="market">
+                    
                 </div>
                 <div class="find-body">
                     <div class="nickname">
 
                     </div>
                     <div class="point">
-
+                        
                     </div>
+                    <img src="./img/market.svg" alt="칭호상점가기" class="market">
                     <div class="title">
 
                     </div>
@@ -205,12 +149,24 @@
         </div>
     </div>
 
-    <div class="background-item">
-        <div class="square1"></div>
-        <div class="square2"></div>
-        <div class="square3"></div>
-        <div class="square4"></div>
+    <div id="marketpage" class="hidden">
+        <div class="modal-page">
+            <div class="market-page">
+                <div class="quested-title">
+                    <p>
+                        칭호
+                    </p>
+                    <button type="button" class="marketexit">X</button>
+                </div>
+                <div class="market-body">
+
+                    <button id="buy">구입</button>
+                </div>
+            </div>
+
+        </div>
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>

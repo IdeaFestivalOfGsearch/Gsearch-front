@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+    background-color: black;
+    color:white;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+    padding-top: 100px;
+}
+form{
+    vertical-align: middle;
+}
+#email{
+    width:400px;
+    height:40px;
+    border-radius: 10px;
+}
+
+
+.loginbtn{
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+
+    background-color: #97CCFF;
+    color: white;
+}
